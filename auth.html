@@ -75,22 +75,18 @@
         const form = document.getElementById('loginForm');
         const errorMessage = document.getElementById('error-message');
 
-        // Hardcoded credentials for demonstration (in a real app, this would be checked server-side)
         const correctUsername = 'admin';
         const correctPassword = 'password123';
 
         form.addEventListener('submit', function(event) {
-            event.preventDefault();  // Prevent form submission
+            event.preventDefault(); 
 
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
 
-            // Simple check for hardcoded credentials
             if (username === correctUsername && password === correctPassword) {
-                // If credentials are correct, redirect to the results overview page
-                window.location.href = 'results-overview.html';  // Replace with the actual path to your results page
+                window.location.href = 'index.html'; 
             } else {
-                // Display error message if login fails
                 errorMessage.style.display = 'block';
             }
         });
