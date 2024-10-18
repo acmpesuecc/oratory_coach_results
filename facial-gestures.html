@@ -6,38 +6,101 @@
     <title>Facial Gestures - Oratory Coach</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Verdana, sans-serif;
             margin: 0;
+            text-align: center;
             padding: 20px;
-            background-color: #f4f4f4;
+            background: linear-gradient(135deg, #f1e5f7 0%, #ddc3ee 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
+
         h1 {
-            color: #333;
+            color: #4A148C;
+            margin-bottom: 40px;
+            font-size: 2.8em;
+            letter-spacing: 1px;
         }
+
         .section {
             background-color: #fff;
-            border-radius: 10px;
-            padding: 20px;
+            border-radius: 15px;
+            padding: 30px;
             margin-bottom: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 90%;
+            max-width: 600px;
         }
+        
+        .section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
         .section h2 {
-            color: #5a5a5a;
+            color: #333;
+            font-size: 1.5em;
+            margin-bottom: 10px;
         }
         .result {
             font-weight: bold;
             color: #444;
         }
+        a {
+            color: #770b85;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        /*a:hover {
+            color: #470783;
+        }*/
+        .back-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #770b85;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #470783;
+        }
+    </style>
+    <style>
         .navigation {
             margin-bottom: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 10px 20px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
         }
+
         .navigation a {
-            color: #007BFF;
+            color: #59047d;
             text-decoration: none;
-            margin-right: 15px;
+            margin: 0 15px; /* Horizontal margin */
+            font-weight: bold;
+            padding: 15px 20px; /* Increased vertical padding for more space */
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            display: inline-block; /* Ensure the padding applies evenly */
         }
+
         .navigation a:hover {
-            text-decoration: underline;
+            background-color: #59047d;
+            color: white;
+        }
+        footer {
+            margin-top: 40px;
+            color: #757575;
+            font-size: 0.9em;
         }
     </style>
 </head>
@@ -62,5 +125,9 @@
 
     <a href="index.html">Back to Results Overview</a>
 
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Oratory Coach. All rights reserved.
+    </footer>
 </body>
 </html>
