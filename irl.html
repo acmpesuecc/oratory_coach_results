@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1C1C1E;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            padding: 50px;
+        }
+
+        .upload-section, .result-section {
+            display: none;
+        }
+
+        h1, h2 {
+            color: white;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome Screen -->
+        <div class="welcome-section">
+            <h1>Welcome to Speech Analysis</h1>
+            <h2>Upload your speech video or audio file for analysis</h2>
+            <button class="btn" onclick="showUpload()">Upload Video/Audio</button>
+        </div>
+
+        <!-- Upload Section -->
+        <div class="upload-section">
+            <h2>Upload your Speech File</h2>
+            <input type="file" id="fileInput" accept="audio/*,video/*">
+            <br>
+            <button class="btn" onclick="analyzeFile()">Analyze</button>
+        </div>
+
+        <!-- Result Section -->
+        <div class="result-section">
+            <h1>Analysis Complete</h1>
+            <h2>Aggregate Result: Good</h2>
+            <button class="btn" onclick="viewFacialGestures()">View Facial Gesture Analysis</button>
+            <button class="btn" onclick="viewBodyGestures()">View Body Gesture Analysis</button>
+            <button class="btn" onclick="viewSentimentAnalysis()">View Sentiment Analysis</button>
+            <button class="btn" onclick="viewAggregateResults()">View Aggregate Results</button>
+            <br>
+            <button class="btn" onclick="goHome()">Back to Home</button>
+        </div>
+    </div>
+
+    <script src="aud_vid.js">
+        
+    </script>
+</body>
+</html>
