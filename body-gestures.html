@@ -35,8 +35,6 @@
         a:hover {
             text-decoration: underline;
         }
-    </style>
-    <style>
         .navigation {
             margin-bottom: 20px;
         }
@@ -48,6 +46,23 @@
         }
         .navigation a:hover {
             text-decoration: underline;
+        }
+        .button {
+            display: block;
+            width: 215px;
+            height: 18px;
+            background: #007BFF;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background 0.2s ease;
+        }
+        .button:hover {
+            background: #004c9d;
+            text-decoration: none;
         }
     </style>
     
@@ -71,8 +86,6 @@
         <p><span class="result">Head Movements:</span> Head nodding detected occasionally (40%) indicating attentiveness.</p>
         <p><span class="result">Engagement Level:</span> Overall body gestures suggest a confidence level of 75%.</p>
     </div>
-
-    <a href="index.html">Back to Results Overview</a>
-
+    <a class="button" href="index.html">Back to Results Overview</a>
 </body>
 </html>

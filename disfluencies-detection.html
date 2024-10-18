@@ -49,6 +49,23 @@
         .navigation a:hover {
             text-decoration: underline;
         }
+        .button {
+            display: block;
+            width: 215px;
+            height: 18px;
+            background: #007BFF;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background 0.2s ease;
+        }
+        .button:hover {
+            background: #004c9d;
+            text-decoration: none;
+        }
     </style>
     
 </head>
@@ -70,8 +87,6 @@
         <p><span class="result">Disfluency Percentage:</span> 5% of the spoken content contained disfluencies.</p>
         <p><span class="result">Filler Words Detected:</span> "Um", "Like" used in 3 sentences.</p>
     </div>
-
-    <a href="index.html">Back to Results Overview</a>
-
+    <a class="button" href="index.html">Back to Results Overview</a>
 </body>
 </html>

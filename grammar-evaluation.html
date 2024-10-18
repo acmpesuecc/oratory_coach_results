@@ -49,6 +49,23 @@
         .navigation a:hover {
             text-decoration: underline;
         }
+        .button {
+            display: block;
+            width: 215px;
+            height: 18px;
+            background: #007BFF;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background 0.2s ease;
+        }
+        .button:hover {
+            background: #004c9d;
+            text-decoration: none;
+        }
     </style>
     
 </head>
@@ -71,8 +88,6 @@
         <p><span class="result">Grammar Correctness:</span> 90% of the sentences were grammatically correct.</p>
         <p><span class="result">Incorrect Sections:</span> "The dog quick runs" should be "The dog runs quickly".</p>
     </div>
-
-    <a href="index.html">Back to Results Overview</a>
-
+    <a class="button" href="index.html">Back to Results Overview</a>
 </body>
 </html>
