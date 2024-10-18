@@ -6,61 +6,129 @@
     <title>Oratory Coach Results Overview</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Verdana, sans-serif;
             margin: 0;
+            text-align: center;
             padding: 20px;
-            background-color: #f4f4f4;
+            background: linear-gradient(135deg, #f1e5f7 0%, #ddc3ee 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
+
         h1 {
-            color: #333;
+            color: #4A148C;
+            margin-bottom: 40px;
+            font-size: 2.8em;
+            letter-spacing: 1px;
         }
+
         .section {
             background-color: #fff;
-            border-radius: 10px;
-            padding: 20px;
+            border-radius: 15px;
+            padding: 30px;
             margin-bottom: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 90%;
+            max-width: 600px;
         }
+        
+        .section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
         .section h2 {
-            color: #5a5a5a;
+            color: #333;
+            font-size: 1.5em;
+            margin-bottom: 10px;
         }
+
         .section a {
             text-decoration: none;
-            color: #007BFF;
+            color: #1E88E5;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
         }
+
         .section a:hover {
+            color: #0056b3;
             text-decoration: underline;
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            .section {
+                padding: 20px;
+                margin-bottom: 15px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .section h2 {
+                font-size: 1.3em;
+            }
+
+            .section a {
+                font-size: 1.1em;
+            }
+        }
+
+        /* Styling for the navigation bar */
+        .navigation {
+            margin-bottom: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 10px 20px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center; /* Center-aligns the links */
+            flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+        }
+
+        .navigation a {
+            color: #4A148C; /* Consistent purple theme */
+            text-decoration: none;
+            margin: 0 15px; /* Horizontal margin */
+            font-weight: bold;
+            padding: 15px 20px; /* Increased vertical padding for more space */
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .navigation a:hover {
+            background-color: #4A148C; /* Purple background on hover */
+            color: white; /* Change text color to white */
         }
 
         /* Styling for the login button */
         .login-button {
-            display: inline-block;
             padding: 10px 20px;
-            margin-bottom: 20px;
-            background-color: #007BFF;
-            color: white;
+            margin-left: 20px; /* Space between links and the login button */
+            background-color: #eddde4d4; /* Purple background color */
+            color: white; /* White text */
             text-align: center;
             border-radius: 5px;
             text-decoration: none;
-            font-size: 16px;
-            transition: background-color 0.3s ease;
+            font-size: 18px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         .login-button:hover {
-            background-color: #0056b3;
+            background-color: #dac5e3; /* Darker shade on hover */
+            transform: scale(1.05); /* Slight scaling effect on hover */
         }
-
-        .navigation {
-            margin-bottom: 20px;
-        }
-        .navigation a {
-            color: #007BFF;
-            text-decoration: none;
-            margin-right: 15px;
-            font-weight: bold;
-        }
-        .navigation a:hover {
-            text-decoration: underline;
+        /* Footer */
+        footer {
+            margin-top: 40px;
+            color: #757575;
+            font-size: 0.9em;
         }
     </style>
 </head>
@@ -77,13 +145,12 @@
         <a href="disfluencies-detection.html">Disfluencies</a>
         <a href="suggestions.html">Suggestions</a>
         <a href="irl.html">Real Time Analysis</a>
+        <a href="login.html" class="login-button">Login</a>
+
     </div>
 
     <h1>Oratory Coach - Results Overview</h1>
-
-    <!-- Add the login button at the top or any preferred location -->
-    <a href="login.html" class="login-button">Login</a>
-
+    
     <!-- Links to each individual section -->
     <div class="section">
         <h2><a href="facial-gestures.html">Facial Gestures</a></h2>
@@ -113,5 +180,9 @@
         <h2><a href="suggestions.html">Suggestions for Improvement</a></h2>
     </div>
 
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Oratory Coach. All rights reserved.
+    </footer>
 </body>
 </html>
